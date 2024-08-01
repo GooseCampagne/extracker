@@ -1,0 +1,7 @@
+{
+  "name": "extracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
