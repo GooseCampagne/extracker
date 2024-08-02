@@ -1,0 +1,88 @@
+:host {
+    display: block;
+    height: 100vh;
+    background: url('/assets/login-photo.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para contraste */
+  }
+  
+  .login-form {
+    background: #1a1a1a; /* Fondo oscuro del formulario */
+    padding: 2rem;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    min-height: 400px; /* Altura mínima para el formulario */
+    margin: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem; /* Tamaño de fuente más grande */
+    color: #e0e0e0; /* Gris muy claro para el título */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 1.25rem; /* Espacio adicional entre grupos de formulario */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #b3b3b3; /* Gris claro para las etiquetas */
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333333; /* Gris oscuro para los bordes */
+    border-radius: 6px; /* Bordes ligeramente redondeados */
+    font-size: 1rem;
+    background: #2c2c2c; /* Gris oscuro para los campos de entrada */
+    color: #e0e0e0; /* Texto gris claro para buena legibilidad */
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #444444; /* Gris más claro al enfocar */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(68, 68, 68, 0.3); /* Sombra sutil gris */
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px; /* Bordes redondeados para el botón */
+    background: #333333; /* Gris oscuro para el botón */
+    color: #e0e0e0; /* Texto gris claro */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background: #444444; /* Gris más claro para el hover */
+  }
+  
+  .error-message {
+    color: #ff4d4d; /* Rojo suave para los errores */
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  

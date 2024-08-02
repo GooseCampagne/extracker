@@ -14,10 +14,14 @@ export class RegisterPage {
   constructor(private authService: AuthService, private router: Router) {}
 
   register() {
-    this.authService.register(this.email, this.password).then(() => {
-      this.router.navigate(['/login']);
-    }).catch((error: any) => {
-      console.error(error);
-    });
+    this.authService.register(this.email, this.password)
+      .then(() => {
+        this.router.navigate(['/login']);
+      })
+      .catch((error: any) => {
+        console.error('Error signing up:', error);
+        // Provide user feedback
+        alert('Signup failed. Please check your credentials and try again.');
+      });
   }
 }

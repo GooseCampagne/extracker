@@ -21,3 +21,4 @@ export class ActivitiesPage implements OnInit {
     });
   }
 }
+  
