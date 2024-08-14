@@ -8,7 +8,11 @@ const routes: Routes = [
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule) },
   { path: 'activities', loadChildren: () => import('./activities/activities.module').then(m => m.ActivitiesPageModule) },
   { path: 'add-activity', loadChildren: () => import('./add-activity/add-activity.module').then(m => m.AddActivityPageModule) },
-  { path: 'edit-activity/:id', loadChildren: () => import('./edit-activity/edit-activity.module').then(m => m.EditActivityPageModule) },
+  { path: 'edit-activity/:id', loadChildren: () => import('./edit-activity/edit-activity.module').then(m => m.EditActivityPageModule) },  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+
 ];
 
 @NgModule({

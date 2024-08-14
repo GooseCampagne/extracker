@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
+import { IonicModule } from '@ionic/angular';
 
+import { ProfilePageRoutingModule } from './profile-routing.module';
+
+import { ProfilePage } from './profile.page';
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    ProfilePageRoutingModule
+  ],
+  declarations: [ProfilePage]
 })
-export class ProfileModule { }
+export class ProfilePageModule {}

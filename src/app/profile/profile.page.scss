@@ -1,0 +1,23 @@
+.profile-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  ion-menu {
+    --background: #2c2c2c; /* Fondo del menú lateral */
+  }
+  
+  ion-item {
+    --color: #ffffff; /* Color de texto de los elementos del menú */
+  }
+  
+  ion-icon {
+    color: #ffffff; /* Color del icono */
+  }
+  

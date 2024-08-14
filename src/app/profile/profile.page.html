@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+  <ion-menu side="start" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/profile">
+          <ion-icon slot="start" name="person-circle"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-item>
+        <!-- Agrega más elementos de menú según sea necesario -->
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+<ion-content class="ion-padding">
+  <div class="profile-image-container" *ngIf="profileImageUrl">
+    <img [src]="profileImageUrl" alt="Imagen de perfil" />
+  </div>
+
+  <ion-button expand="full" (click)="uploadProfilePicture()">Subir desde Galería</ion-button>
+  <ion-button expand="full" (click)="takePhoto()">Tomar una Foto</ion-button>
+</ion-content>
